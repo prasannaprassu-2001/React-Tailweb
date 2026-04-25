@@ -1,0 +1,95 @@
+.reimagining-section {
+  padding: 40px 0;
+  background: #fff;
+}
+
+.small-title {
+  color: #e53935;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.main-title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.main-title span {
+  color: #e53935;
+}
+
+.description {
+  max-width: 700px;
+  margin: auto;
+  color: #666;
+  font-size: 14px;
+}
+
+.impact-card-new {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f7f7f7;
+  border-radius: 15px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.card-left {
+  flex: 1;
+}
+
+.quote-box {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  position: relative;
+    border-left: 4px solid #e53935;
+}
+
+.quote-box p {
+  font-size: 13px;
+  margin: 0;
+}
+
+.quote-icon {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  background: #e53935;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 8px;
+  border-radius: 50%;
+}
+
+.card-right img {
+  max-width: 140px;
+  height: auto;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #e53935;
+}
+
+.about-btn {
+  background: #e53935;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+}

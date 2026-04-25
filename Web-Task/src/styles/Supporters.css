@@ -1,0 +1,43 @@
+.egov-supporters {
+  background: #fff;
+}
+
+.egov-support-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #e53935;
+}
+
+.light-text {
+  color: #aaa;
+  font-weight: 400;
+}
+
+.logo-box {
+  width: 140px;      
+  height: 60px;      
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.support-logo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; 
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.support-logo:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+.support-logo {
+  filter: grayscale(100%);
+}
+
+.support-logo:hover {
+  filter: grayscale(0%);
+}
