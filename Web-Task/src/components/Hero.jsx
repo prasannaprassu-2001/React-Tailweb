@@ -1,5 +1,6 @@
 import "../styles/Hero.css";
 import banner from "../assets/images/banner.png"
+import AnimatedText from "./AnimatedText";
 const Hero = () => {
   return (
     <section className="hero">
@@ -13,7 +14,7 @@ const Hero = () => {
 
             <h1>
               20 years of digital transformation in public service delivery
-              <span className="highlight-text"> It’s possible.</span>
+              <span className="highlight-text"> <AnimatedText text="It's Possible."/> </span>
             </h1>
 
             <p className="hero-desc">

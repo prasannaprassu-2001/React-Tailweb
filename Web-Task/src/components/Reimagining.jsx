@@ -2,6 +2,7 @@ import { useState } from "react";
 import "../styles/Reimagining.css";
 
 import digit from "../assets/images/digit.png";
+import AnimatedText from "./AnimatedText";
 
 
 const data = [
@@ -44,7 +45,7 @@ const Reimagining = () => {
 
         <h2 className="main-title">
           20 years of reimagining for citizens and
-          <span> sustaining change</span>
+          <span> <AnimatedText text="sustaining change"/></span>
         </h2>
 
         <p className="description">
@@ -85,7 +86,12 @@ const Reimagining = () => {
           ))}
         </div>
 
-        <button className="about-btn mt-4">About Us</button>
+        <button className="about-btn mt-4" onClick={() => {
+    const el = document.getElementById("about-us");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  }}>About Us</button>
 
       </div>
     </section>

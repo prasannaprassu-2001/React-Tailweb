@@ -9,6 +9,7 @@ import DigitHero from "./components/DigitHero";
 import LatestEgov from "./components/LatestEgov";
 import Supporters from "./components/Supporters";
 import Footer from "./components/Footer";
+import ScrollButtons from "./components/ScrollButtons";
 
 function App() {
   const [search, setSearch] = useState("");
@@ -40,6 +41,7 @@ function App() {
       </div>
       <Supporters/>
       <Footer/>
+      <ScrollButtons/>
     </>
   );
 }

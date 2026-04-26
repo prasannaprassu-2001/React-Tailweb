@@ -1,5 +1,6 @@
 import "../styles/DigitHero.css";
 import digitImg from "../assets/images/digit.png";
+import AnimatedText from "./AnimatedText";
 
 const DigitHero = () => {
   return (
@@ -20,7 +21,7 @@ const DigitHero = () => {
             <p className="subtext">Our open source</p>
 
             <h1 className="title">
-              technology-for-good <br /> platform
+              <AnimatedText text="technology-for-good platform"/>
             </h1>
 
             <p className="desc">

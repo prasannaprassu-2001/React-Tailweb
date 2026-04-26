@@ -1,5 +1,6 @@
 import "../styles/StatsFeatures.css";
 import medical from "../assets/images/medical.png"
+import AnimatedText from "./AnimatedText";
 const StatsFeatures = () => {
   return (
     <>
@@ -9,7 +10,7 @@ const StatsFeatures = () => {
           <div className="row align-items-center text-center text-md-start">
 
             <div className="col-md-3 mb-3">
-              <h2 className="main-stat">1,000,000,100+</h2>
+              <h2 className="main-stat"> <AnimatedText text="1,000,000,100+"/> </h2>
               <p className="stat-desc">
                 Citizens impacted across India through digital solutions
               </p>

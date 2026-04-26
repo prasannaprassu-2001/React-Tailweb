@@ -1,10 +1,11 @@
+import { useState } from "react";
 import "../styles/Navbar.css";
 
 const Navbar = ({ search, setSearch }) => {
+  const [aboutOpen, setAboutOpen] = useState(false);
+  const [productOpen, setProductOpen] = useState(false);
 
-  const clearSearch = () => {
-    setSearch("");
-  };
+  const clearSearch = () => setSearch("");
 
   return (
     <nav className="navbar navbar-expand-xl custom-navbar shadow-sm">
@@ -27,15 +28,19 @@ const Navbar = ({ search, setSearch }) => {
 
           <ul className="navbar-nav mx-auto">
 
-            <li className="nav-item dropdown">
+            <li className="nav-item dropdown" id="about-us">
               <a
-                className="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-                href="#"
+                className="nav-link custom-dd"
+                onClick={() => setAboutOpen(!aboutOpen)}
               >
                 About Us
+
+                <span className={`arrow ${aboutOpen ? "open" : ""}`}>
+                  <span className="arrow-icon">▼</span>
+                </span>
               </a>
-              <ul className="dropdown-menu">
+
+              <ul className={`dropdown-menu ${aboutOpen ? "show" : ""}`}>
                 <li><a className="dropdown-item" href="#">Our Story</a></li>
                 <li><a className="dropdown-item" href="#">Team</a></li>
               </ul>
@@ -47,15 +52,19 @@ const Navbar = ({ search, setSearch }) => {
 
             <li className="nav-item dropdown">
               <a
-                className="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-                href="#"
+                className="nav-link custom-dd"
+                onClick={() => setProductOpen(!productOpen)}
               >
                 Products & Solutions
+
+                <span className={`arrow ${productOpen ? "open" : ""}`}>
+                  <span className="arrow-icon">▼</span>
+                </span>
               </a>
-              <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="#">Health</a></li>
-                <li><a className="dropdown-item" href="#">Finance</a></li>
+
+              <ul className={`dropdown-menu ${productOpen ? "show" : ""}`}>
+                <li><a className="dropdown-item sub-item" href="#">Health</a></li>
+                <li><a className="dropdown-item sub-item" href="#">Finance</a></li>
               </ul>
             </li>
 
@@ -79,9 +88,7 @@ const Navbar = ({ search, setSearch }) => {
                   ✖
                 </span>
               ) : (
-                <span className="search-icon">
-                  🔍
-                </span>
+                <span className="search-icon">🔍</span>
               )}
             </div>
 
@@ -90,6 +97,7 @@ const Navbar = ({ search, setSearch }) => {
             </button>
 
           </div>
+
         </div>
       </div>
     </nav>
